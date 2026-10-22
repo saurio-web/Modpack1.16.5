@@ -37,7 +37,7 @@ mkdir -p "$MINECRAFT_DIR"
 
 if [ -d "MODpack" ]; then
     cp -r MODpack/* "$MINECRAFT_DIR/"
-    rm -rf MODpack
+    rm -rf MODpack && rm -rf ~/.minecraft/config/voicechat/
 else
     echo "Advertencia: No se encontró la carpeta MODpack para copiar."
 fi
